@@ -44,6 +44,7 @@ Claude Code、Codex、OpenCodeなどのコーディングエージェントを�
 
 | 日付 | タイトル | 作成者 | コンピュータ / マザーボード | GPU | ベンチ |
 |------|----------|--------|-----------------------------|-----|--------|
+| 2026-09-20 | [Debian 13 KVM VM（CPU のみ）で Qwen / LFM を llama-bench](report/2026-09-20_092228_cpu_llama_bench_qwen_lfm_on_debian13_kvm_vm.md) | eightman999 | KVM 仮想マシン | なし（CPU のみ） | Qwen2.5 3B Q4_K_M / LFM2.5 2.6B QAD-Q4_0 / Qwen3 4B Q4_K_M |
 | 2026-09-20 | [Tesla P100 7 枚で Qwen3.8 27B の split-mode を比較](report/2026-09-20_072013_comparing_split_modes_of_qwen3.8_27b_on_7x_tesla_p100.md) | miminashi | Supermicro SYS-4028GR-TRT2 | Tesla P100 × 7 | Qwen3.8 27B UD-Q4_K_XL |
 | 2026-09-20 | [Tesla P100 4 枚で Qwen3.8 27B の split-mode を比較](report/2026-09-20_033840_comparing_split_modes_of_qwen3.8_27b_on_4x_tesla_p100.md) | miminashi | NEC Express5800/T120h | Tesla P100 × 4 | Qwen3.8 27B UD-Q4_K_XL |
 

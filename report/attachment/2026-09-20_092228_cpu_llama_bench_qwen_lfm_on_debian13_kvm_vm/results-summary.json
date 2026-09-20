@@ -1,0 +1,50 @@
+{
+  "author": "eightman999",
+  "created_local": "2026-09-20",
+  "machine": {
+    "computer": "KVM 仮想マシン（DMI の製品名・マザーボード型番は取得不可）",
+    "gpu": "なし（CPU のみ）",
+    "cpu": "Intel Xeon Processor (KVM), 8 vCPU, 1 thread/core",
+    "memory": "15 GiB RAM, swap なし",
+    "os": "Debian GNU/Linux 13 (trixie), Linux 6.12.94+",
+    "notes": "KVM 仮想マシン。ホスト名・IP・シリアルは非公開。"
+  },
+  "software": {
+    "llama_cpp": "ggml-org/llama.cpp @ 6d9c82e (0.4.0-dev), build-noamx, Release, CPU backend",
+    "tool": "llama-bench (llama.cpp 同梱)。GPU が無いため llama-split-bench は未使用。"
+  },
+  "bench_conditions": {
+    "threads": 8,
+    "n_gpu_layers": 0,
+    "prompt": 512,
+    "gen": 64,
+    "reps": 3,
+    "quant": "Q4_K_M (Qwen) / QAD-Q4_0 (LFM2.5)"
+  },
+  "results": [
+    {
+      "model": "Qwen2.5-3B-Instruct",
+      "file": "Qwen2.5-3B-Instruct-Q4_K_M.gguf",
+      "size_gib": 1.79,
+      "params": "3.09B",
+      "pp512_tps": "308.83 ± 2.11",
+      "tg64_tps": "21.89 ± 0.35"
+    },
+    {
+      "model": "LFM2.5-2.6B",
+      "file": "LFM2.5-2.6B-QAD-Q4_0.gguf",
+      "size_gib": 1.48,
+      "params": "2.70B",
+      "pp512_tps": "234.59 ± 2.51",
+      "tg64_tps": "41.59 ± 0.98"
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507",
+      "file": "Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "size_gib": 2.32,
+      "params": "4.02B",
+      "pp512_tps": "228.40 ± 1.09",
+      "tg64_tps": "17.30 ± 0.51"
+    }
+  ]
+}
