@@ -7,7 +7,7 @@
 
 KVM 仮想マシン（Debian GNU/Linux 13、Intel Xeon Processor 8 vCPU、メモリ 15 GiB、GPU なし）で、llama.cpp の `llama-bench` により Qwen2.5-3B-Instruct Q4_K_M、LFM2.5-2.6B QAD-Q4_0、Qwen3-4B-Instruct-2507 Q4_K_M を測定しました。
 GPU が無いため llama-split-bench は使わず、CPU バックエンド（`ngl=0`、threads=8、pp512 / tg64、繰り返し 3 回）です。
-同条件では prefills は Qwen2.5-3B が最速（pp512 308.83 t/s）、生成は LFM2.5-2.6B が最速（tg64 41.59 t/s）でした。
+同条件では prefill は Qwen2.5-3B が最速（pp512 308.83 t/s）、生成は LFM2.5-2.6B が最速（tg64 41.59 t/s）でした。
 
 ## ハードウェア
 
