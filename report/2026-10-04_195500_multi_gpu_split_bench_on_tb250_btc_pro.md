@@ -162,5 +162,6 @@ depth 0 の新規プロンプト prefill（t/s）:
 - [run-info-vulkan.json](attachment/2026-10-04_195500_multi_gpu_split_bench_on_tb250_btc_pro/run-info-vulkan.json) / [run-info-cuda.json](attachment/2026-10-04_195500_multi_gpu_split_bench_on_tb250_btc_pro/run-info-cuda.json)
 - [kepler-sm35-shim.patch](attachment/2026-10-04_195500_multi_gpu_split_bench_on_tb250_btc_pro/kepler-sm35-shim.patch)（llama.cpp b11384 を sm_35 でビルド可能にする pre-Volta warp-intrinsic shim）
 - [llama-2023-clblast-port.patch](attachment/2026-10-04_195500_multi_gpu_split_bench_on_tb250_btc_pro/llama-2023-clblast-port.patch)（llama.cpp 2e6cd4b 向け: convert.py の BF16 safetensors 対応 + head_dim=100 推定、llama.cpp の MODEL_1B/3B 登録）
+- [gpu-spec-performance.md](attachment/2026-10-04_195500_multi_gpu_split_bench_on_tb250_btc_pro/gpu-spec-performance.md)（全GPUの公称FP32・帯域と実測decodeの対比）
 - [fermi-clblast-notes.txt](attachment/2026-10-04_195500_multi_gpu_split_bench_on_tb250_btc_pro/fermi-clblast-notes.txt)（390.157 環境の nvidia-smi/clinfo 出力と CLBlast ngl スイープ結果）
 - 各アームの results-*.json / results-*-pp0.json / argv-*.txt（attachment ディレクトリ内）
